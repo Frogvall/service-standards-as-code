@@ -1,10 +1,10 @@
 ServiceStandardsAsCodeTemplates:
-    Type: AWS::CodeCommit::Repository
-    Properties:
-      RepositoryName: ServiceStandardsAsCodeTemplates
-      RepositoryDescription: This is the repository where the generator lambda will fetch the templates. Updates to your service standards is made in this repo.
-        Code:
-          BranchName: master
-          S3: 
-            Bucket: YetToBeDetermined.arn,
-            Key: Templates.zip,
+  Type: AWS::CodeCommit::Repository
+  Properties:
+    RepositoryName: ServiceStandardsAsCodeTemplates
+    RepositoryDescription: This is the repository where the generator lambda will fetch the templates. Updates to your service standards is made in this repo.
+      Code:
+        BranchName: master
+        S3: 
+          Bucket: YetToBeDetermined.arn,
+          Key: Templates.zip,
